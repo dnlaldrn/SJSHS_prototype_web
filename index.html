@@ -1,179 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>San Juan SHS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <header >
-        <div class="logo-container">
-            <img class="logo" src="logo.jpg">
-        </div>
-        <div class="title-container">
-            <h1 class="title">San Juan Senior High Scool</h1>
-        </div>
-        
-        
-        <nav class="navbar">
-            <a href="#home" >Home</a>
-            <a href="#strand">Strand</a>
-            <a href="#facilities">Facilities</a>
-            <a href="#admission">Admission</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
-       
+<body class="bg-white text-gray-800">
 
-    </header>
-    <section class="home" id="home">
-        
-        <div class="text-container">
-            <p class="text1">Be</p>
-            <p class="text2">Juanitos</p>
-            <p class="text3">And</p>
-            <p class="text4">Juanitas</p>
-            <p class="text5">Be one of us!</p>
+  <!-- Header -->
+  <header class="flex flex-wrap items-center justify-between p-4 bg-blue-800 text-white">
+    <div class="flex items-center gap-2">
+      <img src="logo.jpg" alt="Logo" class="w-12 h-12 rounded-full">
+      <h1 class="text-xl sm:text-2xl font-bold">San Juan Senior High School</h1>
     </div>
-    <div class="student-container">
-        <img class="student" src="student.png">
+    <nav class="flex flex-wrap gap-4 mt-4 sm:mt-0 text-sm sm:text-base">
+      <a href="#home" class="hover:underline">Home</a>
+      <a href="#strand" class="hover:underline">Strand</a>
+      <a href="#facilities" class="hover:underline">Facilities</a>
+      <a href="#admission" class="hover:underline">Admission</a>
+      <a href="#contact" class="hover:underline">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="flex flex-col-reverse md:flex-row items-center justify-center p-8 bg-gray-100">
+    <div class="text-center md:text-left space-y-2 md:w-1/2">
+      <p class="text-4xl font-bold text-blue-700">Be</p>
+      <p class="text-5xl font-bold text-blue-900">Juanitos</p>
+      <p class="text-4xl font-bold text-blue-700">And</p>
+      <p class="text-5xl font-bold text-blue-900">Juanitas</p>
+      <p class="text-lg mt-2">Be one of us!</p>
+      <a href="#admission">
+        <button class="mt-4 px-6 py-2 bg-blue-700 text-white rounded hover:bg-blue-600">Enroll Now</button>
+      </a>
     </div>
-    <div class="button-container"><a href="#admission"><button>Enroll Now</button></a></div>
-    </section>
-    <section class="strand" id="strand">
-        <h1 class="strands">Strands</h1>
-       
-            <div class="strand-container">
-                <div class="box">
-                    <div class="info">
-                        <h1>STEM</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque pariatur assumenda, molestiae numquam molestias alias tenetur impedit. Quibusdam in quia ad eius possimus voluptatum, necessitatibus ipsum facere totam veniam!</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="info">
-                        <h1>ABM</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque pariatur assumenda, molestiae numquam molestias alias tenetur impedit. Quibusdam in quia ad eius possimus voluptatum, necessitatibus ipsum facere totam veniam!</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="info">
-                        <h1>HUMSS</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque pariatur assumenda, molestiae numquam molestias alias tenetur impedit. Quibusdam in quia ad eius possimus voluptatum, necessitatibus ipsum facere totam veniam!</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="info">
-                        <h1>TVL-ICT</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque pariatur assumenda, molestiae numquam molestias alias tenetur impedit. Quibusdam in quia ad eius possimus voluptatum, necessitatibus ipsum facere totam veniam!</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="info">
-                        <h1>TVL-HE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque pariatur assumenda, molestiae numquam molestias alias tenetur impedit. Quibusdam in quia ad eius possimus voluptatum, necessitatibus ipsum facere totam veniam!</p>
-                    </div>
-                </div>
-            </div>
-     
-    </section>
-    
-    <section class="facilities" id="facilities">
-        <h1 class="fac">Featured</h1>
-    <div class="slider-container">
-        <div class="slider">
-            <figure>
-                <div class="slide">
-                    <img src="img1.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img2.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img3.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img4.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img1.jpg">
-                </div>
-                
-               
-            </figure>
-        </div>
+    <div class="md:w-1/2 mb-6 md:mb-0">
+      <img src="student.png" alt="Student" class="max-w-full h-auto">
     </div>
-     
-    </section>
+  </section>
 
-    <section class="admission" id="admission">
-        <h1 class="admission-title">Admission</h1>
-        <div class="admission-container">
-            <div class="admission-box">
-                <div class="admission-info">
-                    <h1>Step 1</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Excepturi perspiciatis
-                         mollitia consequatur in explicabo eius adipisci
-                          quibusdam ullam nesciunt, sed similique, quidem
-                           accusantium beatae rerum reiciendis totam numqua
-                           m libero aliquam.
-
-                    </p>
-                </div>
-            </div>
-            <div class="admission-box">
-                <div class="admission-info">
-                    <h1>Step 2</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Excepturi perspiciatis
-                         mollitia consequatur in explicabo eius adipisci
-                          quibusdam ullam nesciunt, sed similique, quidem
-                           accusantium beatae rerum reiciendis totam numqua
-                           m libero aliquam.
-
-                    </p>
-                </div>
-            </div>
-            <div class="admission-box">
-                <div class="admission-info">
-                    <h1>Step 3</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Excepturi perspiciatis
-                         mollitia consequatur in explicabo eius adipisci
-                          quibusdam ullam nesciunt, sed similique, quidem
-                           accusantium beatae rerum reiciendis totam numqua
-                           m libero aliquam.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="contact" id="contact">
-        <h1 class="contact-title">Contact</h1>
-        <div class="input-container">
-        <div class="input-group">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="number" placeholder="Mobile Number" required>
-            <input type="email" placeholder="Email Adress" required>
-        </div>
-        <div class="input-group2">
-            <input class="message-input"type="text" placeholder="Your Message">
-    
-        </div>
+  <!-- Strand Section -->
+  <section id="strand" class="p-8">
+    <h1 class="text-3xl font-bold text-center mb-6">Strands</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Repeat this block per strand -->
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">STEM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">ABM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">HUMSS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">TVL-ICT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">TVL-HE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
     </div>
-    <div class="Send-button-container">
-        <button onclick="
-        alert ('This button is under maintenance. Sorry for inconvience')">Send Message</button>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="p-8 bg-gray-100">
+    <h1 class="text-3xl font-bold text-center mb-6">Featured</h1>
+    <div class="overflow-x-auto">
+      <div class="flex gap-4">
+        <img src="img1.jpg" class="w-80 h-52 object-cover rounded shadow" />
+        <img src="img2.jpg" class="w-80 h-52 object-cover rounded shadow" />
+        <img src="img3.jpg" class="w-80 h-52 object-cover rounded shadow" />
+        <img src="img4.jpg" class="w-80 h-52 object-cover rounded shadow" />
+      </div>
     </div>
-        
-<script>
-    
-</script>
+  </section>
+
+  <!-- Admission Section -->
+  <section id="admission" class="p-8">
+    <h1 class="text-3xl font-bold text-center mb-6">Admission</h1>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Step 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Step 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="p-4 border rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Step 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 bg-gray-100">
+    <h1 class="text-3xl font-bold text-center mb-6">Contact</h1>
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="grid gap-4 md:grid-cols-2">
+        <input type="text" placeholder="First Name" class="border p-2 rounded w-full" required>
+        <input type="text" placeholder="Last Name" class="border p-2 rounded w-full" required>
+        <input type="number" placeholder="Mobile Number" class="border p-2 rounded w-full" required>
+        <input type="email" placeholder="Email Address" class="border p-2 rounded w-full" required>
+      </div>
+      <textarea class="w-full border p-2 rounded" rows="4" placeholder="Your Message"></textarea>
+      <div class="text-center">
+        <button class="px-6 py-2 bg-blue-700 text-white rounded hover:bg-blue-600"
+          onclick="alert('This button is under maintenance. Sorry for the inconvenience.')">Send Message</button>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
